@@ -29,7 +29,7 @@
 		
 		// camera
 		camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
-		camera.position.z = 250;
+		camera.position.z = 5;
 
 		// controls
 		controls = new THREE.TrackballControls( camera );
@@ -105,8 +105,10 @@
 			objLoader2.setMaterials( materials );
 			objLoader2.setPath( 'models/' );
 			objLoader2.load( 'building.obj', function ( object ) {
-				object.position.x= 0; object.position.y= -95; object.position.z= 0;
-				object.rotation.x= 0; object.rotation.y= 0; object.rotation.z= 0;
+				object.position.x = 32;
+				object.position.y = -3;
+				object.position.z = 3;
+				object.rotation.x = -1.6;
 				object.scale.x= 3.949999999999994; object.scale.y= 3.949999999999994; object.scale.z= 3.949999999999994;
 				object.name = 'heartPart';
 				scene.add( object );
